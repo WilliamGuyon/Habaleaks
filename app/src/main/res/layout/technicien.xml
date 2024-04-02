@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blanc">
+    <View
+        android:id="@+id/bottom_tech_activity"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:background="@color/bleumarine"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@drawable/dome_bg"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_tech_activity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <View
+            android:layout_width="175dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_logo_lemonnier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logoLemonnier"
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/logo_lemonnier"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_technicien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/Agentdentretient"
+            android:textColor="@color/bleuciel"
+            android:textSize="27sp"
+            android:fontFamily="@font/baloo"
+            app:layout_constraintTop_toBottomOf="@id/logoLemonnier"
+            tools:layout_editor_absoluteX="-16dp" />
+
+        <TextView
+            android:id="@+id/prenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/Prenom"
+            android:textColor="@color/bleuciel"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/text_technicien"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:text="@string/Nom"
+            android:textColor="@color/bleuciel"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/prenom" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_signalerTechnicien"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:background="@drawable/btn_rose"
+        android:text="@string/Signaler_Incident"
+        android:gravity="center"
+        android:fontFamily="@font/baloo"
+        android:textAllCaps="false"
+        android:textColor="@color/bleuciel"
+        android:textSize="25sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_liste_incidents"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:background="@drawable/btn_rose"
+        android:text="@string/Liste_incidents"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/bleuciel"
+        android:textSize="25sp"
+        android:fontFamily="@font/baloo"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

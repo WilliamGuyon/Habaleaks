@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Habaleaks</string>
+    <string name="ConnexionText">Connexion</string>
+    <string name="Profil">Nom d\'utilisateur</string>
+    <string name="Motdepasse">Mot de passe</string>
+    <string name="seConnecter">Se connecter</string>
+    /*test*/
+    <string name="seCoTechnicien">Se connecter en tant que technicien</string>
+    <string name="seCoAgtEntretient">Se connecter en tant qu\'agent d\'entretient</string>
+    /*test*/
+    <string name="mdpOublie">Mot de passe oublié ?</string>
+    <string name="Deconnexion">Deconnexion</string>
+    <string name="Signaler_Incident">Signaler un incident</string>
+    <string name="Liste_incidents">Liste des incidents</string>
+    <string name="Nom">Nom</string>
+    <string name="Prenom">Prenom</string>
+    <string name="Agentdentretient">Agent d\'entretient</string>
+    <string name="Technicien">Technicien</string>
+    <string name="Annuler">Annuler</string>
+    <string name="Desctiption">Description de l\'incident</string>
+    <string name="numDeTel">Numéro de téléphone</string>
+    <string name="votreNumDeTel">entrez votre numéro de téléphone</string>
+    <string name="adresseBDD">Adresse de la base de donées</string>
+    <string name="entrezAdresseBDD">entrez l\'adresse de la base de doonées</string>
+    <string name="sauvegarder">Sauvegarder</string>
+    <string name="Envoyer">Envoyer</string>
+    <string name="utiliser_la_localisation">utiliser la localisation</string>
+    <string-array name="Categories">
+        <item>Dégradation materielle</item>
+        <item>Problème hygyènique</item>
+        <item>(Autre)</item>
+    </string-array>
+</resources>

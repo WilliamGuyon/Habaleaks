@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="noir">#FF000000</color>
+    <color name="blanc">#FFFFFFFF</color>
+    <color name="bleumarine">#0B162C</color>
+    <color name="bleumoinsmarine">#1C2942</color>
+    <color name="bleupastel">#3B556D</color>
+    <color name="turquoise">#5FC2BA</color>
+    <color name="hintText">#686868</color>
+    <color name="rose">#b30054</color>
+    <color name="bleuciel">#2FB9D2</color>
+</resources>

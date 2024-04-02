@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanc"
+    tools:context=".page_de_connexion">
+
+    <View
+        android:id="@+id/topConnexionScreen"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="132dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/rose"
+        android:textSize="65sp"
+        app:layout_constraintEnd_toStartOf="@+id/topConnexionScreen"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toEndOf="@+id/topConnexionScreen"
+        app:layout_constraintTop_toTopOf="@id/topConnexionScreen">
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/rectangleconnexion"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topConnexionScreen"
+        tools:layout_editor_absoluteX="5dp">
+
+        <TextView
+            android:id="@+id/textConnexion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="@string/ConnexionText"
+            android:textColor="@color/bleuciel"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textbjr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Bonjour"
+            android:textColor="@color/bleuciel"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textConnexion" />
+
+        <TextView
+            android:id="@+id/TVnumconnexionpagedeconnexion"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:hint="@string/numDeTel"
+            android:textColor="@color/bleuciel"
+            android:textColorHint="@color/bleuciel"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textbjr" />
+
+        <Button
+            android:id="@+id/btnconnexion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_connexion_"
+            android:gravity="center"
+            android:fontFamily="@font/baloo"
+            android:text="@string/seConnecter"
+            android:textAllCaps="false"
+            android:textColor="@color/bleumoinsmarine"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/TVnumconnexionpagedeconnexion" />
+
+        <Switch
+            android:id="@+id/switchtesttechnicien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/seCoTechnicien"
+            android:textColor="@color/blanc"
+            android:textSize="19sp"
+            app:layout_constraintTop_toBottomOf="@id/btnconnexion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="95dp"
+        android:background="@drawable/logo_lemonnier"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
